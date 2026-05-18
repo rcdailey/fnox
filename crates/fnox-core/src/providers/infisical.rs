@@ -41,9 +41,7 @@ impl InfisicalProvider {
         let client_id = match infisical_client_id() {
             Some(id) => id,
             None => {
-                tracing::debug!(
-                    "No explicit credentials found, falling back to CLI session auth"
-                );
+                tracing::debug!("No explicit credentials found, falling back to CLI session auth");
                 return Ok(None);
             }
         };
