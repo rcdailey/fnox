@@ -22,7 +22,6 @@ vault = "latest"
 infisical = "latest"
 node = "24"
 usage = "latest"
-rust = "latest"
 
 [tasks.test]
 description = "Run both cargo and bats tests"
